@@ -4,7 +4,21 @@
     <key>
       <name>iw_components</name>
       <value>
-        <map />
+        <map>
+          <key>
+            <name>com.idega.block.facebook.client.presentation.FacebookLogin</name>
+            <value>
+              <map>
+                <key>
+                  <name>component_property_file</name>
+                  <type>java.lang.String</type>
+                  <value>com.idega.block.facebook.client.presentation.FacebookLogin.pxml</value>
+                </key>
+              </map>
+            </value>
+            <type>map</type>
+          </key>
+        </map>
       </value>
       <type>map</type>
     </key>

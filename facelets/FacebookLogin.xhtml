@@ -4,4 +4,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets"></div>
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:fb="http://ogp.me/ns/fb#"
+	class = "facebookLogin">
+	<div id="fb-root"></div>
+	
+	<!-- Below we include the Login Button social plugin. This button uses the 
+		JavaScript SDK to present a graphical Login button that triggers 
+		the FB.login() function when clicked.
+	
+		Learn more about options for the login button plugin:
+		/docs/reference/plugins/login/ 
+	-->
+	<fb:login-button perms="email" size="large"/>
+</div>
