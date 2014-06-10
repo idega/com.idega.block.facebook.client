@@ -1,0 +1,19 @@
+<ui:fragment 
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		rendered="#{not twitterRequestBean.twitterScriptAdded}" 
+>
+	<script type="text/javascript">
+	<!--
+	jQuery(document).ready(function() {
+		jQuery.ajaxSetup({ cache: true });
+		jQuery.getScript('http://platform.twitter.com/widgets.js', function(){
+			twttr.widgets.load();
+		}).fail(function( jqxhr, settings, exception ) {
+		    alert("Failed Loading twitter status" + settings +' '+ exception);
+		});
+	});
+	//-->
+	</script>
+	#{twitterRequestBean.twitterScriptAddedSet}
+</ui:fragment>

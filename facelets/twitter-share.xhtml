@@ -1,0 +1,10 @@
+<ui:fragment xmlns:ui="http://java.sun.com/jsf/facelets" >
+	<ui:include src="#{IWURIResource.res['/idegaweb/bundles/com.idega.block.facebook.client.bundle/facelets/twitter-script.xhtml']}" />
+	<div class="i_tw_div">
+	<a href="https://twitter.com/share" data-url="#{twitterShareButtonBean.urlToShare}" class="twitter-share-button" data-count="none">
+		#{localizedStrings['com.idega.block.facebook.client']['tweet']}
+	</a>
+	</div>
+</ui:fragment>
+
+

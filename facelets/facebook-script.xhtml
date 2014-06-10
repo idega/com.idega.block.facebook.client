@@ -1,0 +1,22 @@
+<ui:fragment 
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		rendered="#{not facebookRequestBean.facebookScriptAdded}" 
+>
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+	<!--
+	jQuery(document).ready(function() {
+		jQuery.ajaxSetup({ cache: true });
+		jQuery.getScript('//connect.facebook.net/en_UK/all.js', function(){
+			 FB.init({
+			      appId: #{facebookLoginService.applicationId},
+			    });  
+		    jQuery('#loginbutton,#feedbutton').removeAttr('disabled');
+		    FB.XFBML.parse();
+		  });
+		});
+	//-->
+	</script>
+	#{facebookRequestBean.facebookScriptAddedSet}
+</ui:fragment>
