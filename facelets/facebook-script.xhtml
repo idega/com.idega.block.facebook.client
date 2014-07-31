@@ -18,5 +18,13 @@
 		});
 	//-->
 	</script>
+	<!-- Facebook ajax load bug workaround -->
+	<style>
+		.fb-share-button span, .fb-share-button iframe {
+			width: 120px! important;
+			height: 25px! important;
+		}
+	</style>
+	<!-- //////////////// -->
 	#{facebookRequestBean.facebookScriptAddedSet}
 </ui:fragment>
