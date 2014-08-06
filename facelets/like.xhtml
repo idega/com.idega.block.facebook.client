@@ -1,0 +1,11 @@
+<ui:fragment xmlns:ui="http://java.sun.com/jsf/facelets" >
+	<ui:include src="#{IWURIResource.res['/idegaweb/bundles/com.idega.block.facebook.client.bundle/facelets/facebook-script.xhtml']}" />
+	<div class="fb-like" 
+		data-href="#{facebookLikeButtonBean.urlToLike}" 
+		data-layout="#{facebookLikeButtonBean.layout}" 
+		data-action="#{facebookLikeButtonBean.actionType}" 
+		data-show-faces="#{facebookLikeButtonBean.showFriendFaces}" 
+		data-share="#{facebookLikeButtonBean.share}"
+		data-width="#{facebookLikeButtonBean.width}"
+	/>
+</ui:fragment>
